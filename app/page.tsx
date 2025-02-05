@@ -4,7 +4,7 @@ import { data } from "./data";
 export default function Home() {
   const currency = "ل.س";
   const date = new Date().toLocaleDateString();
-
+  const dollarPrice = 10000;
   const categories = data;
 
   return (
@@ -29,6 +29,12 @@ export default function Home() {
               </p>
               <p className="text-gray-600 ">
                 لتاريخ <span className="font-bold mx-2">{date}</span>
+              </p>
+              <p className="text-gray-600 ">
+                سعر الصرف{" "}
+                <span className="font-bold mx-2">
+                  {Number(dollarPrice).toFixed(2)} {currency}
+                </span>
               </p>
             </div>
           </div>
