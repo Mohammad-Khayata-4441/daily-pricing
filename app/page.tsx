@@ -41,9 +41,9 @@ export default function Home() {
                 <table className="text-right table-auto w-full">
                   <thead>
                     <tr className="border-b border-slate-300 bg-slate-50">
-                      <th className="p-4 text-lg font-normal leading-none">
+                      {/* <th className="p-4 text-lg font-normal leading-none">
                         صورة
-                      </th>
+                      </th> */}
                       <th className="p-4 text-lg font-normal leading-none">
                         المادة
                       </th>
@@ -58,13 +58,13 @@ export default function Home() {
                   <tbody>
                     {category.products.map((pr) => (
                       <tr className="hover:bg-slate-50" key={pr.id}>
-                        <td className="p-4 border-b border-slate-200 py-5">
+                        {/* <td className="p-4 border-b border-slate-200 py-5">
                           <img
                             src={pr.image}
                             alt={pr.name}
                             className="w-16 h-16 object-cover rounded"
                           />
-                        </td>
+                        </td> */}
                         <td className="p-4 border-b border-slate-200 py-5">
                           <p className="block font-semibold text-lg text-slate-800">
                             {pr.name} ({pr.quantity} {pr.unit})
